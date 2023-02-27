@@ -7,7 +7,7 @@ body {
   margin: 0;
   padding: 0;
   text-align: center;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Lora', serif;
   color: #222;
   background: #f7f5f0;
 }
@@ -53,15 +53,16 @@ a:hover {
 }
 .nav a:hover {
   color: white
-}
+} 
 
 header {
   text-align: center;
-  background: url('images/portland.jpg') no-repeat top center ;
+  background: url('images/background.jpg') no-repeat top center ;
   background-size: cover;
   overflow: hidden;
   padding-top: 60px;
 }
+
 header {
   line-height: 1.5;
 }
@@ -69,13 +70,49 @@ header .profile-image {
   margin-top: 50px;
   width: 150px;
   height: 150px;
-  border-radius: 50%;
+  border-radius: 45%;
   border: 3px solid white;
   transition: all .5s;
 }
-header .profile-image:hover {
-  transform: scale(1.2) rotate(5deg);
+
+
+article .piano_circular-image {
+  margin-top: 50px;
+  margin-left: 45px;
+  width: 150px;
+  height: 113px;
+  border-radius: 0%;
+  border: 3px solid white;
+  transition: all .5s;
 }
+
+article .computer_keyboard-image {
+  margin-top: 50px;
+  margin-left: 66px;
+  width: 150px;
+  height: 113px;
+  border-radius: 0%;
+  border: 3px solid white;
+  transition: all .5s;
+}
+
+
+article .game_controller-image {
+  margin-top: 50px;
+  margin-left: 46px;
+  width: 150px;
+  height: 113px;
+  border-radius: 0%;
+  border: 3px solid white;
+  transition: all .5s;
+}
+
+
+
+header .profile-image:hover {
+  transform: scale(1.11) rotate(-6deg);
+}
+
 .tag {
   background-color: #efefef;
   color: black;
@@ -84,10 +121,26 @@ header .profile-image:hover {
   display: table;
   margin: 10px auto;
 } 
+
+.tag_interests {
+  background-color: #efefef;
+  color: black;
+  padding: 10px;
+  border-radius: 5px;
+  display: table;
+  margin: 10px auto;
+} 
+
 .location {
   background-color: #222;
-  color: yellow;
+  color: beige;
 }
+
+.interests {
+  background-color: #222;
+  color: beige;
+}
+
 .card {
   margin: 30px;
   padding: 20px 40px 40px;
@@ -98,7 +151,39 @@ header .profile-image:hover {
   border-radius: 6px;
   transition: all .5s;
 }
+
+.card_projects {
+  margin: 30px;
+  padding: 20px 40px 40px;
+  max-width: 500px;
+  text-align: left;
+  background: #fff;
+  border-bottom: 4px solid #ccc;
+  border-radius: 6px;
+  transition: all .5s;
+}
+
+.card_interests_article {
+  margin: 30px;
+  padding: 20px 40px 40px;
+  max-width: 500px;
+  text-align: left;
+  background: #fff;
+  border-bottom: 4px solid #ccc;
+  border-radius: 6px;
+  transition: all .5s;
+
+}
+
 .card:hover {
+  border-color: #ff99ff;
+}
+
+.card_projects:hover {
+  border-color: #ff99ff;
+}
+
+.card_interests_article:hover {
   border-color: #ff99ff;
 }
 
@@ -118,6 +203,28 @@ ul.skills {
 
 .skills li:nth-child(odd) {
   background: #0399ff;
+}
+
+ul.skills_projects {
+  padding: 0;
+  text-align: center;
+}
+
+.skills_projects li {
+  border-radius: 6px;
+  display: inline-block;
+  background: #deba8498;
+  color: rgb(0, 0, 0);
+  padding: 5px 10px;
+  margin: 2px;
+}
+
+.skills_projects li:nth-child(1) {
+  background: #5d2b7e2b;
+}
+
+.skills_projects li:nth-child(2) {
+  background: #5d2b7e2b;
 }
 
 footer {
@@ -151,12 +258,7 @@ a.social {
   opacity: .4;
   transition: all .5s;
 }
-a.twitter {
-  background-image: url(images/twitter.svg);
-}
-a.linkedin {
-  background-image: url(images/linkedin.svg);
-}
+
 a.github {
   background-image: url(images/github.svg);
 }
@@ -178,6 +280,18 @@ a.social:hover {
       justify-content: space-around;
       margin: 0 auto;
   }
+
+  .flex_projects {
+    display: -ms-flexbox;      /* TWEENER - IE 10 */
+    display: flex; 
+    max-width: 1200px;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    margin: 0 auto;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+}
 
   header {
     min-height: 470px;
